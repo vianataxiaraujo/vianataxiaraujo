@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Taxiaraujo</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/ac46e9b614.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="img/thumbnail_logo_Prancheta-1-2.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html"><i class="fa-solid fa-house"></i></i> HOME</a></li>
+                        <li><a href="index.html#ABOUT"><i class="fa-solid fa-bookmark"></i> SOBRE NÓS</a></li>
+                        <!--<li><a href="#FROTA">FROTA</a></li>-->
+                        <li><a href="servicos.html"><i class="fa-solid fa-location-arrow"></i> SERVIÇOS</a></li>
+                        <li><a href="album.html"><i class="fa-regular fa-images"></i> FOTOS</a></li>
+                        <!--<li><a href="blog.html">PUBLICIDADE</a></li>-->
+                        <li><a href="#CONTACTOS"><i class="fa-solid fa-phone"></i> CONTACTOS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Contacte-nos</h1>
+        </section>
+
+        <!--scrollup-->
+        <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+
+        <!--Forms-->
+        <section class="contact-us" id="CONTACTOS">
+            <div class="row">
+                <div class="contact-col liga">
+                    <div>
+                        <i class="fa fa-home"></i>
+                        <span>
+                            <h5>Viana do Castelo, Portugal</h5>
+                            <p>Rua da Giesteira 125A, R/C direito, 4900-713</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <span>
+                            <h5>+351 926 045 402</h5>
+                            <p>Disponível 24 horas por dia</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                            <h5>geral@taxiaraujo.pt</h5>
+                        </span>
+                    </div>
+                </div>
+                <div class="contact-col ligaa">
+                    <div class="container">
+                        <!--posso tirar o captcha-->
+                        <form action="https://formsubmit.co/swajiplay@gmail.com" method="POST">
+                            <i class="fas fa-paper-plane"></i>
+                            <div class="input-group">
+                                <label>Full Name</label>
+                                <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                                <span id="name-error"></span>
+                            </div>
+                            <div class="input-group">
+                                <label>Phone No.</label>
+                                <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="validatePhone()">
+                                <span id="phone-error"></span>
+                            </div>
+                            <div class="input-group">
+                                <label>Email Id</label>
+                                <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+                                <span id="email-error"></span>
+                            </div> 
+                            <div>
+                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/taxiaraujo_website/index.html">
+                            </div>
+                            <div class="input-group">
+                                <label>Your Message</label>
+                                <textarea rows="5" placeholder="Enter your message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                                <span id="message-error"></span>
+                            </div>
+                            <button onclick="return validateForm()">Submit</button>
+                            <span id="submit-error"></span>
+                        </form>  
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="index.html#ABOUT">Sobre Nós</a></li>
+                            <li><a href="servicos.html">Serviços</a></li>
+                            <li><a href="album.html">Fotos</a></li>
+                            <li><a href="contactos.html">Contactos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Segue-nos</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/vianataxiaraujo" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/viana_taxi_araujo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/926045402" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://m.me/374710182725545" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-bottom">
+            <p>Feito com <i class="fa fa-heart-o"></i> por Rodrigo Araujo</p>
+        </div>
+
+        <!--JavaScript for Toggle Menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>

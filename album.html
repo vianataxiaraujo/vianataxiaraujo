@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Taxiaraujo</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/ac46e9b614.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="img/thumbnail_logo_Prancheta-1-2.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html"><i class="fa-solid fa-house"></i></i> HOME</a></li>
+                        <li><a href="index.html#ABOUT"><i class="fa-solid fa-bookmark"></i> SOBRE NÓS</a></li>
+                        <!--<li><a href="#FROTA">FROTA</a></li>-->
+                        <li><a href="servicos.html"><i class="fa-solid fa-location-arrow"></i> SERVIÇOS</a></li>
+                        <li><a href="album.html"><i class="fa-regular fa-images"></i> FOTOS</a></li>
+                        <!--<li><a href="blog.html">PUBLICIDADE</a></li>-->
+                        <li><a href="contactos.html"><i class="fa-solid fa-phone"></i> CONTACTOS</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Álbum de Fotos</h1>
+        </section>
+
+        <!--scrollup-->
+        <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a>
+
+        <!---facilities--->
+        <section class="facilities">
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="img/64587837_1122916047904951_8488700795494072320_n.jpg">
+                    <h3>Faro</h3>
+                    <p>Cais da paparica</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="img/282200234_403290181806793_4621876543923069205_n.jpg">
+                    <h3>Viana do Castelo</h3>
+                    <p>Estaçao de Viana</p>
+                </div>
+                <div class="facilities-col">
+                    <img src="img/64587837_1122916047904951_8488700795494072320_n.jpg">
+                    <h3>Lisboa</h3>
+                    <p>Cais do pais</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="index.html#ABOUT">Sobre Nós</a></li>
+                            <li><a href="servicos.html">Serviços</a></li>
+                            <li><a href="album.html">Fotos</a></li>
+                            <li><a href="contactos.html">Contactos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Segue-nos</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/vianataxiaraujo" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/viana_taxi_araujo/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/926045402" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://m.me/374710182725545" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-bottom">
+            <p>Feito com <i class="fa fa-heart-o"></i> por Rodrigo Araujo</p>
+        </div>
+
+        <!--JavaScript for Toggle Menu-->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+        </script>
+
+    </body>
+</html>
